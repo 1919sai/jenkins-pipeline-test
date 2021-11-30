@@ -1,5 +1,5 @@
 pipeline{
- agent any{
+ agent any
 	stages{
 	
 			stage('Build Application'){
@@ -14,9 +14,9 @@ pipeline{
 			}
 			stage('Perform Regression Testing'){
 			steps{
-			bat 'newman run E:\\newman_testing\\hello-world.postman_collection.json --disable-unicode'
+			bat 'cd C:\\Users\\Admin\\AppData\\Roaming\\npm&newman run E:\\newman_testing\\hello-world.postman_collection.json --disable-unicode'
 				}
 			}
 		}
-	}
+	
  }
